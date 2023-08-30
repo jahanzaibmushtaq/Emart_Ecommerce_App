@@ -4,7 +4,6 @@ import 'package:emart_app/custom_widgets/custom_elevated_button.dart';
 import 'package:emart_app/custom_widgets/textfield_widget.dart';
 import 'package:emart_app/view/auth_screens/login_screen.dart';
 import 'package:flutter/material.dart';
-import '../../consts/social_icons_logo_list.dart';
 import '../../custom_widgets/applogo_widget.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -101,7 +100,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                       ),
                     ],
-                  )).onTap(() { Get.to(LoginScreen());}),
+                  )).onTap(() { Get.to(const LoginScreen());}),
                 ],
               )
                   .box

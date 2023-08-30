@@ -1,3 +1,5 @@
+import 'package:emart_app/view/categories_screens/categories_screen.dart';
+import 'package:emart_app/view/home_screen/home_screen.dart';
 import 'package:emart_app/view/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'consts/consts.dart';
@@ -16,10 +18,15 @@ class MyApp extends StatelessWidget {
       title: appname,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.transparent,
-        appBarTheme: const AppBarTheme(backgroundColor: Colors.transparent),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.transparent,
+          iconTheme: IconThemeData(
+            color: darkFontGrey,
+          ),
+        ),
         fontFamily: regular,
       ),
-      home: const SplashScreen(),
+      home: const CategoriesScreen(),
     );
   }
 }
