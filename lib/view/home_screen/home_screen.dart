@@ -1,7 +1,7 @@
-import 'package:emart_app/consts/consts.dart';
-import 'package:emart_app/consts/lists.dart';
-import 'package:emart_app/custom_widgets/home-buttons.dart';
-import 'package:emart_app/view/home_screen/components/feature_buttons.dart';
+import 'package:spark_shop/consts/consts.dart';
+import 'package:spark_shop/consts/lists.dart';
+import 'package:spark_shop/custom_widgets/home-buttons.dart';
+import 'package:spark_shop/view/home_screen/components/feature_buttons.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {

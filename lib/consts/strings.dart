@@ -1,4 +1,4 @@
-const appname = "eMart";
+const appname = "Spark Shop";
 const appversion = "Version 1.0.0";
 const credits = "Jahanzaib Mushtaq";
 const developedBy = "Developed By";
@@ -57,3 +57,10 @@ const sellerPolicy = "Seller Policy";
 const returnPolicy = "Return Policy";
 const supportPolicy = "Support Policy";
 const productsYouAlsoLike = "Products You May Also Like";
+
+//profile screen
+
+const logout = "Logout";
+const wishlist = "My Wishlist";
+const messages = "Messages";
+const orders = "My Orders";

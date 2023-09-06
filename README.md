@@ -1,4 +1,4 @@
-# emart_app
+# spark_shop
 
 A new Flutter project.
 

@@ -1,5 +1,5 @@
-import 'package:emart_app/consts/consts.dart';
-import 'package:emart_app/view/auth_screens/login_screen.dart';
+import 'package:spark_shop/consts/consts.dart';
+import 'package:spark_shop/view/auth_screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../custom_widgets/applogo_widget.dart';
@@ -12,24 +12,28 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  changeScreen(){
+  changeScreen() {
     Future.delayed(const Duration(seconds: 3), () {
-      Get.to(()=>const LoginScreen());
+      Get.to(() => const LoginScreen());
     });
   }
+
   @override
   void initState() {
     changeScreen();
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
-      return Scaffold(
+    return Scaffold(
       backgroundColor: redColor,
       body: Center(
         child: Column(
           children: [
-            Align(alignment: Alignment.topLeft, child: Image.asset(icSplashBg, width: 300)),
+            Align(
+                alignment: Alignment.topLeft,
+                child: Image.asset(icSplashBg, width: 300)),
             20.heightBox,
             appLogoWidget(),
             10.heightBox,

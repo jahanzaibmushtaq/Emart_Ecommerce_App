@@ -1,8 +1,8 @@
-import 'package:emart_app/consts/consts.dart';
-import 'package:emart_app/custom_widgets/bg_image_widget.dart';
-import 'package:emart_app/custom_widgets/custom_elevated_button.dart';
-import 'package:emart_app/custom_widgets/textfield_widget.dart';
-import 'package:emart_app/view/auth_screens/login_screen.dart';
+import 'package:spark_shop/consts/consts.dart';
+import 'package:spark_shop/custom_widgets/bg_image_widget.dart';
+import 'package:spark_shop/custom_widgets/custom_elevated_button.dart';
+import 'package:spark_shop/custom_widgets/textfield_widget.dart';
+import 'package:spark_shop/view/auth_screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import '../../custom_widgets/applogo_widget.dart';
 
@@ -15,6 +15,7 @@ class SignUpScreen extends StatefulWidget {
 
 class _SignUpScreenState extends State<SignUpScreen> {
   bool? isCheck = false;
+
   @override
   Widget build(BuildContext context) {
     return bgImageWidget(Scaffold(
@@ -38,69 +39,84 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       child: TextButton(
                           onPressed: () {}, child: forgotPass.text.make())),
                   Row(
-                    children: [Checkbox(
-                        checkColor: whiteColor,
-                        activeColor: redColor,
-                        value: isCheck, onChanged: (newValue) {
-                          setState(() {
-                            isCheck = newValue;
-                          });
-                    }),
+                    children: [
+                      Checkbox(
+                          checkColor: whiteColor,
+                          activeColor: redColor,
+                          value: isCheck,
+                          onChanged: (newValue) {
+                            setState(() {
+                              isCheck = newValue;
+                            });
+                          }),
                       Expanded(
-                        child: RichText(text: const TextSpan(
+                        child: RichText(
+                            text: const TextSpan(
                           children: [
                             TextSpan(
-                              text: " I agree to the ", style: TextStyle(
-                              fontFamily: bold,
-                              color: fontGrey,
-                            ),
-                            ),
-                            TextSpan(
-                              text: termAndCond, style: TextStyle(
-                              fontFamily: bold,
-                              color: redColor,
-                            ),
+                              text: " I agree to the ",
+                              style: TextStyle(
+                                fontFamily: bold,
+                                color: fontGrey,
+                              ),
                             ),
                             TextSpan(
-                              text: " & ", style: TextStyle(
-                              fontFamily: bold,
-                              color: fontGrey,
-                            ),
+                              text: termAndCond,
+                              style: TextStyle(
+                                fontFamily: bold,
+                                color: redColor,
+                              ),
                             ),
                             TextSpan(
-                              text: privacyPolicy, style: TextStyle(
-                              fontFamily: bold,
-                              color: redColor,
+                              text: " & ",
+                              style: TextStyle(
+                                fontFamily: bold,
+                                color: fontGrey,
+                              ),
                             ),
+                            TextSpan(
+                              text: privacyPolicy,
+                              style: TextStyle(
+                                fontFamily: bold,
+                                color: redColor,
+                              ),
                             ),
-
                           ],
                         )),
                       ),
                     ],
                   ),
                   5.heightBox,
-                  CustomElevatedButton(signup, () {}, isCheck == true? whiteColor : redColor, isCheck == true? redColor : lightGolden)
+                  CustomElevatedButton(
+                          signup,
+                          () {},
+                          isCheck == true ? whiteColor : redColor,
+                          isCheck == true ? redColor : lightGolden)
                       .box
                       .width(context.screenWidth - 50)
                       .make(),
                   5.heightBox,
-                  RichText(text: const TextSpan(
+                  RichText(
+                      text: const TextSpan(
                     children: [
                       TextSpan(
-                        text: alreadyHaveAcc, style: TextStyle(
-                        fontFamily: bold,
-                        color: fontGrey,
-                      ),
+                        text: alreadyHaveAcc,
+                        style: TextStyle(
+                          fontFamily: bold,
+                          color: fontGrey,
+                        ),
                       ),
                       TextSpan(
-                        text: login, style: TextStyle(
-                        fontFamily: bold,
-                        color: redColor,
-                      ),
+                        text: login,
+                        style: TextStyle(
+                          fontFamily: bold,
+                          color: redColor,
+                        ),
                       ),
                     ],
-                  )).onTap(() { Get.to(const LoginScreen());}),
+                  )).onTap(() {
+                    Get.to(const LoginScreen());
+                  }),
                 ],
               )
                   .box

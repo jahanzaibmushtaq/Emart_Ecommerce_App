@@ -1,10 +1,10 @@
-import 'package:emart_app/consts/consts.dart';
-import 'package:emart_app/consts/lists.dart';
-import 'package:emart_app/custom_widgets/applogo_widget.dart';
-import 'package:emart_app/custom_widgets/custom_elevated_button.dart';
-import 'package:emart_app/custom_widgets/textfield_widget.dart';
-import 'package:emart_app/view/auth_screens/signup_screen.dart';
-import 'package:emart_app/view/home_screen/home.dart';
+import 'package:spark_shop/consts/consts.dart';
+import 'package:spark_shop/consts/lists.dart';
+import 'package:spark_shop/custom_widgets/applogo_widget.dart';
+import 'package:spark_shop/custom_widgets/custom_elevated_button.dart';
+import 'package:spark_shop/custom_widgets/textfield_widget.dart';
+import 'package:spark_shop/view/auth_screens/signup_screen.dart';
+import 'package:spark_shop/view/home_screen/home.dart';
 import 'package:flutter/material.dart';
 
 import '../../custom_widgets/bg_image_widget.dart';

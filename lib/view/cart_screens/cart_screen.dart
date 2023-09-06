@@ -1,3 +1,4 @@
+import 'package:spark_shop/consts/consts.dart';
 import 'package:flutter/material.dart';
 
 class CartScreen extends StatelessWidget {
@@ -7,7 +8,12 @@ class CartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.yellow,
+        color: Colors.white,
+        child: "Cart is Empty!"
+            .text
+            .fontFamily(semibold)
+            .color(darkFontGrey)
+            .makeCentered(),
       ),
     );
   }

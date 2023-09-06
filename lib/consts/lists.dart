@@ -1,4 +1,4 @@
-import 'package:emart_app/consts/consts.dart';
+import 'package:spark_shop/consts/consts.dart';
 
 const socialIconList = [
   icFacebookLogo,
@@ -60,3 +60,8 @@ const itemsDetailButtonList = [
   returnPolicy,
   supportPolicy,
 ];
+
+//profile screen
+
+const profileButtonsList = [orders, wishlist, messages];
+const profileIconsList = [icOrder, icOrder, icMessages];

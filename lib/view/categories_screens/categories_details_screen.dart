@@ -1,7 +1,7 @@
-import 'package:emart_app/custom_widgets/bg_image_widget.dart';
-import 'package:emart_app/view/categories_screens/items_details_screen.dart';
+import 'package:spark_shop/custom_widgets/bg_image_widget.dart';
+import 'package:spark_shop/view/categories_screens/items_details_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:emart_app/consts/consts.dart';
+import 'package:spark_shop/consts/consts.dart';
 
 class CategoriesDetailScreen extends StatelessWidget {
   const CategoriesDetailScreen({super.key, required this.title});

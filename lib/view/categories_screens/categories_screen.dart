@@ -1,7 +1,7 @@
-import 'package:emart_app/consts/consts.dart';
-import 'package:emart_app/consts/lists.dart';
-import 'package:emart_app/custom_widgets/bg_image_widget.dart';
-import 'package:emart_app/view/categories_screens/categories_details_screen.dart';
+import 'package:spark_shop/consts/consts.dart';
+import 'package:spark_shop/consts/lists.dart';
+import 'package:spark_shop/custom_widgets/bg_image_widget.dart';
+import 'package:spark_shop/view/categories_screens/categories_details_screen.dart';
 import 'package:flutter/material.dart';
 
 class CategoriesScreen extends StatelessWidget {
@@ -11,10 +11,8 @@ class CategoriesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return bgImageWidget(Scaffold(
       appBar: AppBar(
-        title: categories.text
-            .fontFamily(bold)
-            .white
-            .make(),
+        automaticallyImplyLeading: false,
+        title: categories.text.fontFamily(bold).white.make(),
         backgroundColor: Colors.transparent,
         shadowColor: Colors.transparent,
       ),
@@ -40,7 +38,10 @@ class CategoriesScreen extends StatelessWidget {
                 15.heightBox,
                 categoriesTitlesList[index].text.make(),
               ],
-            ).box.white.rounded
+            )
+                .box
+                .white
+                .rounded
                 .clip(Clip.antiAlias)
                 .outerShadowSm
                 .make()

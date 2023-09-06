@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:emart_app/consts/consts.dart';
+import 'package:spark_shop/consts/consts.dart';
 
 import '../../consts/lists.dart';
 import '../../custom_widgets/custom_elevated_button.dart';
@@ -236,7 +236,7 @@ class ItemsDetailScreen extends StatelessWidget {
                                     .make(),
                                 trailing: const Icon(Icons.arrow_forward),
                               )),
-                    ),
+                    ).box.white.rounded.make(),
 
                     10.heightBox,
 
@@ -244,7 +244,7 @@ class ItemsDetailScreen extends StatelessWidget {
                     productsYouAlsoLike.text
                         .fontFamily(bold)
                         .size(16)
-                        .color(darkFontGrey)
+                        .color(redColor)
                         .make(),
                     10.heightBox,
                     //copied from home screen

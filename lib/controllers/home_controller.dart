@@ -1,14 +1,14 @@
-import 'package:emart_app/consts/consts.dart';
-import 'package:emart_app/view/account_profile_screens/account_profile_screen.dart';
-import 'package:emart_app/view/cart_screens/cart_screen.dart';
-import 'package:emart_app/view/categories_screens/categories_screen.dart';
-import 'package:emart_app/view/home_screen/home_screen.dart';
+import 'package:spark_shop/consts/consts.dart';
+import 'package:spark_shop/view/account_profile_screens/account_profile_screen.dart';
+import 'package:spark_shop/view/cart_screens/cart_screen.dart';
+import 'package:spark_shop/view/categories_screens/categories_screen.dart';
+import 'package:spark_shop/view/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
-class HomeController extends GetxController{
+class HomeController extends GetxController {
   var currentNavIndex = 0.obs;
   var navBody = [
-     const HomeScreen(),
+    const HomeScreen(),
     const CategoriesScreen(),
     const CartScreen(),
     const ProfileScreen(),

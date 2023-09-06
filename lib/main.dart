@@ -1,10 +1,13 @@
-import 'package:emart_app/view/categories_screens/categories_screen.dart';
-import 'package:emart_app/view/home_screen/home_screen.dart';
-import 'package:emart_app/view/splash_screen/splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:spark_shop/view/categories_screens/categories_screen.dart';
+import 'package:spark_shop/view/home_screen/home_screen.dart';
+import 'package:spark_shop/view/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'consts/consts.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -26,7 +29,7 @@ class MyApp extends StatelessWidget {
         ),
         fontFamily: regular,
       ),
-      home: const CategoriesScreen(),
+      home: const SplashScreen(),
     );
   }
 }
