@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "529370453103",
+    "project_id": "spark-shop-da790",
+    "storage_bucket": "spark-shop-da790.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529370453103:android:ab8ba1b91741bc19ade99a",
+        "android_client_info": {
+          "package_name": "com.example.spark_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529370453103-fbc82mg1gos09hp32a8dkngf0ap8qtku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr8f_Z2lnH58zvIZ-q3Oz0kPU3pxsTbl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529370453103-fbc82mg1gos09hp32a8dkngf0ap8qtku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
